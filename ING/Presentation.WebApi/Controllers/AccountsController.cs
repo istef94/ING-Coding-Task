@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Entities;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +7,23 @@ using System.Threading.Tasks;
 
 namespace Presentation.WebApi.Controllers
 {
-    public class AccountsController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class AccountsController : ControllerBase
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IEnumerable<Account> Get()
         {
-            return View();
+            //var rng = new Random();
+            //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            //{
+            //    Date = DateTime.Now.AddDays(index),
+            //    TemperatureC = rng.Next(-20, 55),
+            //    Summary = Summaries[rng.Next(Summaries.Length)]
+            //})
+            //.ToArray();
+
+            return null;
         }
     }
 }
