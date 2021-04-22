@@ -1,0 +1,17 @@
+
+ING/Application/obj/*
+ING/Domain/obj/*
+ING/ING/bin/*
+ING/ING/obj/*
+ING/.vs/*
+ING/Application.UnitTests/bin/*
+ING/Application.UnitTests/bin/*
+ING/Domain.UnitTests/bin/*
+ING/Infrastructure/bin/*
+ING/Infrastructure/obj/*
+ING/Presentation.WebApi/obj/*
+ING/Presentation.WebApi/bin/*
+ING/Domain/bin/Debug/*
+ING/Domain.UnitTests/obj/*
+ING/Application.UnitTests/obj/*
+ING/Application/bin/*
