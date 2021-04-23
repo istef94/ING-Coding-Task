@@ -1,0 +1,3 @@
+Pentru partea de testare am presupus ca avem un environment pentru testare si doar schimbam appsettings pentru a putea testa.
+
+Este ca si cum am avea mai multe baze de date, o baza de date pentru DEV si alta baza de date pentru testing, iar in baza de date de testare sa scriem sau sa avem deja datele pregatite (depinde de operatie si de context)
