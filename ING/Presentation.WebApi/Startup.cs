@@ -1,3 +1,5 @@
+using Application.Interfaces;
+using Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +29,12 @@ namespace Presentation.WebApi
         {
 
             services.AddControllers();
+
+
+            services.AddScoped<IDataAccountServices, JSONDataAccountServices>();
+            services.AddScoped<IDataTransactionServices, JSONDataTransactionServices>();
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Presentation.WebApi", Version = "v1" });
