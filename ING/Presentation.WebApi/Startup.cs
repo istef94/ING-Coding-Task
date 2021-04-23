@@ -33,6 +33,7 @@ namespace Presentation.WebApi
 
             services.AddScoped<IDataAccountServices, JSONDataAccountServices>();
             services.AddScoped<IDataTransactionServices, JSONDataTransactionServices>();
+            services.AddScoped<ITransactionReportServices, TransactionReportServices>();
 
 
             services.AddSwaggerGen(c =>
