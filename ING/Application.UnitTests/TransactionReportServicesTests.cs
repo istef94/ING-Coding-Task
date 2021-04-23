@@ -31,6 +31,7 @@ namespace Application.UnitTests
         {
             var transactionReports = _transactionReportServices.GetTransactionReportFromLastMonthGroupedByCategory("NL69INGB0123456789");
             Assert.AreEqual(transactionReports.ToList().Count, 4);
+            Assert.AreEqual(transactionReports.ToArray()[0].TotalAmount, 90);
         }
 
         [Test]
