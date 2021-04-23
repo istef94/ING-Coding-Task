@@ -4,6 +4,97 @@
     "transactionId": 1,
     "amount": 20.00,
     "categoryId": 1,
-    "transactionDate": "2020-09-23"
+    "transactionDate": "2021-03-03"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 2,
+    "amount": 40.00,
+    "categoryId": 2,
+    "transactionDate": "2021-03-24"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 3,
+    "amount": 200.00,
+    "categoryId": 5,
+    "transactionDate": "2021-03-28"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 4,
+    "amount": 1800.00,
+    "categoryId": 5,
+    "transactionDate": "2021-03-09"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 5,
+    "amount": 10.00,
+    "categoryId": 4,
+    "transactionDate": "2021-04-02"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 6,
+    "amount": 600.00,
+    "categoryId": 1,
+    "transactionDate": "2021-04-05"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 7,
+    "amount": 18.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-07"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 8,
+    "amount": 50.00,
+    "categoryId": 2,
+    "transactionDate": "2021-04-09"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 9,
+    "amount": 18.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-12"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 10,
+    "amount": 160.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-15"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 11,
+    "amount": 1400.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-17"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 12,
+    "amount": 1200.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-19"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 13,
+    "amount": 130.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-21"
+  },
+  {
+    "iban": "NL69INGB0123456789",
+    "transactionId": 14,
+    "amount": 15.00,
+    "categoryId": 5,
+    "transactionDate": "2021-04-22"
   }
 ]

@@ -22,7 +22,7 @@ namespace Application.UnitTests
         }
 
         [Test]
-        public void AccountDontExist()
+        public void GetAccountWithWrongIBAN()
         {
             var account = _dataAccountServices.GetAccountByIBAN("Don't exist");
             Assert.IsNull(account);
