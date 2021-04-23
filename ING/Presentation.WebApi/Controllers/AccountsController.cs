@@ -16,7 +16,6 @@ namespace Presentation.WebApi.Controllers
             _JSONDataAccountServices = jSONDataAccountServices;
         }
 
-
         [HttpGet]
         public IEnumerable<Account> Get()
         {

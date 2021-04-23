@@ -1,10 +1,8 @@
 ﻿using Application.Entities;
 using Application.Interfaces;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace Infrastructure
 {
