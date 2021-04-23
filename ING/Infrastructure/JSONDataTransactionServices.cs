@@ -19,15 +19,24 @@ namespace Infrastructure
 
         public IEnumerable<Transaction> GetTransactionsList()
         {
-            string path = config.GetSection("TransactionFilePath").Value;
-            var transactions = new List<Transaction>();
-
-            if (File.Exists(path))
+            try
             {
-                transactions = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Transaction>>(File.ReadAllText(path));
+                string path = config.GetSection("TransactionFilePath").Value;
+                var transactions = new List<Transaction>();
+
+                if (File.Exists(path))
+                {
+                    transactions = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Transaction>>(File.ReadAllText(path));
+                }
+
+                return transactions;
+            }
+            catch (Exception e)
+            {
+                //Log
             }
 
-            return transactions;
+            return null;
         }
     }
 }

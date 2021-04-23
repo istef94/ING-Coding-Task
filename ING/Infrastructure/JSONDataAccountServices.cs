@@ -1,6 +1,7 @@
 ﻿using Application.Entities;
 using Application.Interfaces;
 using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -17,15 +18,24 @@ namespace Infrastructure
 
         public IEnumerable<Account> GetAccountsList()
         {
-            string path = config.GetSection("AccountFilePath").Value;
-            var accounts = new List<Account>();
-
-            if (File.Exists(path))
+            try
             {
-                accounts = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Account>>(File.ReadAllText(path));
+                string path = config.GetSection("AccountFilePath").Value;
+                var accounts = new List<Account>();
+
+                if (File.Exists(path))
+                {
+                    accounts = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Account>>(File.ReadAllText(path));
+                }
+
+                return accounts;
+            }
+            catch (Exception e)
+            {
+                //Log
             }
 
-            return accounts;
+            return null;
         }
     }
 }
