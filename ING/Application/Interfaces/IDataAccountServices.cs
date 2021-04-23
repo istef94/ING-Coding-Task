@@ -8,5 +8,7 @@ namespace Application.Interfaces
     public interface IDataAccountServices
     {
         IEnumerable<Account> GetAccountsList();
+
+        Account GetAccountByIBAN(string iban);
     }
 }
