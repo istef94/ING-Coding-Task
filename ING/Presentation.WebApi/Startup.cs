@@ -27,14 +27,10 @@ namespace Presentation.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
-
-
             services.AddScoped<IDataAccountServices, JSONDataAccountServices>();
             services.AddScoped<IDataTransactionServices, JSONDataTransactionServices>();
             services.AddScoped<ITransactionReportServices, TransactionReportServices>();
-
 
             services.AddSwaggerGen(c =>
             {

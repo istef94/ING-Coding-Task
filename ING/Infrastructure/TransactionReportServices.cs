@@ -22,19 +22,19 @@ namespace Infrastructure
         {
             try
             {
-                var lastMonthTransactions = _dataTransactionServices.GetTransactionsList().Where(
+                var lastMonthTransactions = _dataTransactionServices.GetTransactionsList()?.Where(
                     x => DateTime.Now.AddMonths(-1) < x.TransactionDate && x.Iban.Equals(iban)
-                ).ToList();
+                )?.ToList();
 
-                var account = _dataAccountServices.GetAccountsList().Where(x => x.Iban.Equals(iban)).FirstOrDefault();
+                var account = _dataAccountServices.GetAccountsList()?.Where(x => x.Iban.Equals(iban))?.FirstOrDefault();
 
-                var results = lastMonthTransactions.GroupBy(x => x.CategoryId)
+                var results = lastMonthTransactions.GroupBy(x => x.CategoryId)?
                                 .Select(x => new TransactionReport
                                 {
                                     TotalAmount = x.Sum(y => y.Amount),
                                     CategoryName = Enum.GetName(typeof(TransactionCategoriesEnum), x.First().CategoryId),
                                     Currency = account.Currency
-                                }).ToList();
+                                })?.ToList();
 
                 return results;
             }
