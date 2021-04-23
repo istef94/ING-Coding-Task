@@ -24,6 +24,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{7ED89C7E-453D-4E7D-853C-84897CDB041C}"
 	ProjectSection(SolutionItems) = preProject
 		account.json = account.json
+		testingaccount.json = testingaccount.json
+		testingtransaction.json = testingtransaction.json
 		transaction.json = transaction.json
 	EndProjectSection
 EndProject
