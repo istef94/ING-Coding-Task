@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Application.Interfaces
 {
-    interface IAccountServices
+    public interface IDataAccountServices
     {
         IEnumerable<Account> GetAccountsList();
     }

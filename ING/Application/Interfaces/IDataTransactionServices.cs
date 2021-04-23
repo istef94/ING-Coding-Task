@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Application.Interfaces
 {
-    interface ITransactionServices
+    public interface IDataTransactionServices
     {
         IEnumerable<Transaction> GetTransactionsList();
     }
