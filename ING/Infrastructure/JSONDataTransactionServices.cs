@@ -22,7 +22,7 @@ namespace Infrastructure
             string path = config.GetSection("TransactionFilePath").Value;
             var transactions = new List<Transaction>();
 
-            if (!File.Exists(path))
+            if (File.Exists(path))
             {
                 transactions = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Transaction>>(File.ReadAllText(path));
             }
